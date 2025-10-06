@@ -1,0 +1,136 @@
+.documents {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.documents-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.documents-header h1 {
+  color: #2e7d32;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.btn-primary {
+  background: #2e7d32;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background: #1b5e20;
+}
+
+.documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.document-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.document-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  border-color: #2e7d32;
+}
+
+.document-info h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.document-meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.document-type {
+  background: #e8f5e8;
+  color: #2e7d32;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.document-date {
+  color: #666;
+  font-size: 14px;
+}
+
+.status-badge {
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  min-width: 80px;
+  text-align: center;
+}
+
+.btn-link {
+  color: #2e7d32;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #2e7d32;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-link:hover {
+  background: #2e7d32;
+  color: white;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .documents-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .document-card {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .document-actions {
+    align-self: stretch;
+  }
+
+  .btn-link {
+    display: block;
+    text-align: center;
+  }
+}

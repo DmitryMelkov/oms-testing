@@ -1,0 +1,14 @@
+.mf-app-1 {
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page h2 {
+  color: #1976d2;
+  margin-bottom: 1rem;
+}

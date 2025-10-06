@@ -1,0 +1,24 @@
+{
+  "name": "mf-app-2",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "rspack serve",
+    "build": "rspack build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0"
+  },
+  "devDependencies": {
+    "@module-federation/rspack": "^0.19.1",
+    "@rspack/cli": "^1.5.8",
+    "@rspack/core": "^1.5.8",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "typescript": "^5.9.3"
+  }
+}
