@@ -31,6 +31,8 @@ module.exports = {
       },
       {
         test: /\.css$/,
+        // CSS имеет побочные эффекты — запрещаем выкидывание при тряске
+        sideEffects: true,
         use: ['style-loader', 'css-loader'],
       },
     ],

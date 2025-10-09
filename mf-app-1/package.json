@@ -7,9 +7,12 @@
     "build": "rspack build"
   },
   "dependencies": {
+    "@oms/uikit": "^0.1.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.0"
+    "react-hook-form": "^7.64.0",
+    "react-router-dom": "^6.8.0",
+    "vest": "^5.4.6"
   },
   "devDependencies": {
     "@module-federation/rspack": "^0.19.1",

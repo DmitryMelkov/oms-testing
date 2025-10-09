@@ -32,6 +32,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
+        sideEffects: true,
         use: ['style-loader', 'css-loader'],
       },
     ],
@@ -44,7 +45,7 @@ module.exports = {
       name: 'shell_app',
       remotes: {
         mf_app_1: 'mf_app_1@http://localhost:5001/remoteEntry.js',
-        mf_app_2: 'mf_app_2@http://localhost:5002/remoteEntry.js', 
+        mf_app_2: 'mf_app_2@http://localhost:5002/remoteEntry.js',
       },
       shared: {
         react: {

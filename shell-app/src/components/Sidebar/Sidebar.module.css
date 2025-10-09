@@ -1,0 +1,64 @@
+.sidebar {
+  width: 280px;
+  background: var(--omsiu-black-5);
+  border-right: 1px solid var(--omsiu-black-10);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.sidebarHeader {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--omsiu-black-10);
+}
+
+.sidebarHeader h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--omsiu-blue-100);
+}
+
+.sidebarNav {
+  padding: 1rem 0;
+  flex: 1;
+}
+
+.navSection {
+  margin-bottom: 2rem;
+}
+
+.navSection h3 {
+  font-size: 0.75rem;
+  color: var(--omsiu-black-60);
+  margin: 0 1.5rem 1rem 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  color: var(--omsiu-black-100);
+  text-decoration: none;
+  transition: background-color 0.2s;
+  font-size: 0.9rem;
+}
+
+.navLink:hover,
+.navLink.active {
+  background: var(--omsiu-blue-10);
+  color: var(--omsiu-blue-100);
+}
+
+.navIcon {
+  font-size: 1.1rem;
+}
