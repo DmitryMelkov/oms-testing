@@ -7,42 +7,42 @@
   flex-shrink: 0;
 }
 
-.sidebarHeader {
+.sidebar__header {
   padding: 1.5rem;
   border-bottom: 1px solid var(--omsiu-black-10);
+  display: flex;
+  align-items: center;
 }
 
-.sidebarHeader h2 {
-  margin: 0;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--omsiu-blue-100);
-}
-
-.sidebarNav {
+.sidebar__nav {
   padding: 1rem 0;
   flex: 1;
 }
 
-.navSection {
+.sidebar__section {
   margin-bottom: 2rem;
 }
 
-.navSection h3 {
+.sidebar__title {
   font-size: 0.75rem;
   color: var(--omsiu-black-60);
   margin: 0 1.5rem 1rem 1.5rem;
   text-transform: uppercase;
   font-weight: 600;
+  display: block;
 }
 
-.navSection ul {
+.sidebar__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.navLink {
+.sidebar__item {
+  margin: 0;
+}
+
+.sidebar__link {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -53,12 +53,19 @@
   font-size: 0.9rem;
 }
 
-.navLink:hover,
-.navLink.active {
+.sidebar__link:hover,
+.sidebar__link_active {
   background: var(--omsiu-blue-10);
   color: var(--omsiu-blue-100);
 }
 
-.navIcon {
+.sidebar__icon {
   font-size: 1.1rem;
+  width: 20px;
+  text-align: center;
+}
+
+.sidebar__text {
+  margin: 0;
+  font-weight: 500;
 }

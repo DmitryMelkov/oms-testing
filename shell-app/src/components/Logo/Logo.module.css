@@ -1,0 +1,26 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo__icon {
+  color: var(--omsiu-blue-100);
+}
+
+.logo__icon path {
+  fill: currentColor;
+}
+
+.logo__text {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--omsiu-black-80);
+  margin: 0;
+}
+
+.logo__accent {
+  font-weight: 400;
+  color: var(--omsiu-blue-100);
+}
