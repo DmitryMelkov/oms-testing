@@ -33,7 +33,19 @@ module.exports = {
       {
         test: /\.css$/,
         sideEffects: true,
-        use: ['style-loader', 'css-loader'],
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                auto: true,
+                localIdentName: '[name]__[local]--[hash:base64:5]',
+                exportLocalsConvention: 'camelCase',
+              },
+            },
+          },
+        ],
       },
     ],
   },

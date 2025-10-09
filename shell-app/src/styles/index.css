@@ -1,2 +1,4 @@
 /* Импорт базовых стилей */
 @import './_reset.css';
+@import './_vars.css';
+

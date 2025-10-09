@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { OMSUITypography } from '@oms/uikit';
+import { IcGroup24Icon, IcHome124Icon } from '@oms/uikit/icons';
 import { Logo } from '../Logo/Logo';
 import styles from './Sidebar.module.css';
 
@@ -15,9 +16,6 @@ export const Sidebar: React.FC = () => {
 
       <nav className={styles['sidebar__nav']}>
         <div className={styles['sidebar__section']}>
-          <OMSUITypography.Text as="h3" className={styles['sidebar__title']}>
-            Бизнес-модули
-          </OMSUITypography.Text>
           <ul className={styles['sidebar__list']}>
             <li className={styles['sidebar__item']}>
               <Link
@@ -28,7 +26,9 @@ export const Sidebar: React.FC = () => {
                     : ''
                 }`}
               >
-                <span className={styles['sidebar__icon']}>📋</span>
+                <div className={styles['sidebar__icon-wrapper']}>
+                  <IcHome124Icon size={24} className={styles['sidebar__icon']} />
+                </div>
                 <OMSUITypography.Text className={styles['sidebar__text']}>Заявления</OMSUITypography.Text>
               </Link>
             </li>
@@ -39,7 +39,9 @@ export const Sidebar: React.FC = () => {
                   location.pathname.startsWith('/documents') ? styles['sidebar__link_active'] : ''
                 }`}
               >
-                <span className={styles['sidebar__icon']}>📄</span>
+                <div className={styles['sidebar__icon-wrapper']}>
+                  <IcGroup24Icon size={24} className={styles['sidebar__icon']} />
+                </div>
                 <OMSUITypography.Text className={styles['sidebar__text']}>Документы</OMSUITypography.Text>
               </Link>
             </li>
