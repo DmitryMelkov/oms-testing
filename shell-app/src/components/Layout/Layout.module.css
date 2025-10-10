@@ -4,8 +4,7 @@
 }
 
 .layout__main {
-  flex: 1;
-  padding: 2rem;
+  width: 100%;
   overflow-y: auto;
   background: var(--white);
 }
